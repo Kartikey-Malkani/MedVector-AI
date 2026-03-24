@@ -1,90 +1,94 @@
 # MedVector AI
 
-Production-ready medical retrieval and answer assistant built with a hybrid RAG + CAG architecture.
+Production-ready medical retrieval assistant using a hybrid RAG + CAG architecture with source-grounded answers and enterprise document indexing.
 
-This repository is a **showcase profile** of the project for portfolio, product explanation, and architecture walkthrough.
+[Live Website](https://med-rag-sigma.vercel.app/) | [Architecture](docs/ARCHITECTURE.md) | [Features](docs/FEATURES.md) | [Roadmap](docs/ROADMAP.md)
+
+## Live Product
+
+- Public demo: https://med-rag-sigma.vercel.app/
+- Focus: clinical question answering with explainable sources
+- Includes: search workflow, citation panel, source chunk preview, enterprise PDF indexing
 
 ## Why This Repository Exists
 
-This is a public, documentation-first repository created to explain:
-- what the project does
-- how the system is designed
-- what problems it solves
-- how it performs in production
+This repository is intentionally documentation-first for showcase purposes.
 
-The implementation codebase is intentionally private.
+It helps recruiters, collaborators, and reviewers understand:
+- product scope and value
+- architecture and technical decisions
+- UX and explainability approach
+- deployment and operational maturity
 
-## Project Summary
+Implementation source code is intentionally private.
 
-MedVector AI is designed to answer clinical and enterprise document questions with:
-- retrieval-grounded responses
-- source traceability
-- fast fallback strategies
-- production deployment support
+## Product Highlights
 
-Core capabilities include:
-- medical Q&A with cited evidence
-- enterprise PDF upload and indexing
-- chunk-level source inspection
-- cache-aware answer generation (CAG)
-- latency reporting for CAG and RAG
-- frontend UX built for explainability
+- Hybrid CAG + RAG query flow
+- Source-cited answers with chunk-level evidence
+- Separate latency visibility for total, CAG, and RAG paths
+- Enterprise upload workflow with upload and indexing states
+- Chunk preview and full-detail source modal for long evidence passages
+- Vercel web analytics integration for product telemetry
 
-## High-Level Architecture
+## Screenshot Gallery
 
-The system combines multiple services:
-- frontend web app (query, source cards, upload flow, analytics)
-- backend API (query orchestration, document ingest, metadata)
-- vector retrieval layer (FAISS + metadata store)
-- reranker/answer service
-- deployment infra on cloud platforms
+### 1) Search Landing Experience
 
-See [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) for a deeper breakdown.
+![Search landing page](project_images/Search_intial_page%20(1).png)
 
-## Product Features
+### 2) Query Results With Cited Sources
 
-- Retrieval + rerank + answer pipeline
-- Cited answers with chunk references
-- Detailed source cards and chunk preview UX
-- Upload pipeline for enterprise PDFs
-- Upload phase visibility (uploading vs indexing)
-- Operational metrics surfaced in UI
+![Search results](project_images/Search_results.png)
 
-See [docs/FEATURES.md](docs/FEATURES.md).
+### 3) Source Card Selection and Evidence Snippet
 
-## Access & Permissions
+![Source and chunk citation panel](project_images/Source%20%2C%20chunk%20cited.png)
 
-This repository does not provide source code access.
+### 4) Full Chunk Modal for Deep Evidence Review
 
-If you are:
-- Recruiter or hiring manager: request a guided demo or architecture review.
-- Collaborator candidate: request private access with your GitHub handle and intended scope.
-- Security reviewer: request restricted review access under NDA if needed.
+![Source chunk in detail modal](project_images/Source%20Chunk%20in%20Detail.png)
 
-Access requests can be submitted through repository Issues using the Access Request template.
+### 5) Enterprise Document Upload and Indexing State
 
-See [ACCESS_POLICY.md](ACCESS_POLICY.md).
+![Enterprise document indexing flow](project_images/Enterprise_Document_Indexing.png)
 
-## Security & Responsible Use
+## System Overview
 
-- No patient-identifiable information is included in this repository.
-- Demo content is non-sensitive and used for product showcase only.
-- Security disclosures should follow [SECURITY.md](SECURITY.md).
+Core system components:
+- frontend web experience for search, upload, and source explainability
+- backend API for orchestration, retrieval, and ingestion
+- FAISS-based vector retrieval with metadata joins
+- reranker + answer generation service with fallback behavior
+- cloud deployment configuration for production use
 
-## Roadmap Snapshot
+For full technical details, see [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
 
-- improved retrieval explainability
-- richer enterprise document controls
-- evaluation dashboard and benchmarking exports
-- governance and audit enhancements
+## Access and Permissions
 
-See [docs/ROADMAP.md](docs/ROADMAP.md).
+This public repository does not include source code access.
 
-## Contact
+If you need private implementation access:
+- use the Access Request issue template
+- include GitHub username, review purpose, and expected duration
+- maintainer approval is required
 
-For demo, collaboration, or access discussion, open an Issue in this repository.
+Full policy: [ACCESS_POLICY.md](ACCESS_POLICY.md)
+
+## Security
+
+- No patient-identifiable information is included in this repository
+- This is a showcase repository with documentation and visuals only
+- Vulnerability reports should follow [SECURITY.md](SECURITY.md)
+
+## Collaboration
+
+- Contribution guide: [CONTRIBUTING.md](CONTRIBUTING.md)
+- Code of conduct: [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)
 
 ## License
 
-All rights reserved. Content in this repository is for showcase purposes only.
+All rights reserved.
+
+This repository is for showcase and informational use only.
 See [LICENSE](LICENSE).
