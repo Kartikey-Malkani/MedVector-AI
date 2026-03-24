@@ -2,7 +2,12 @@
 
 Production-ready medical retrieval assistant using a hybrid RAG + CAG architecture with source-grounded answers and enterprise document indexing.
 
-[Live Website](https://med-rag-sigma.vercel.app/) | [Architecture](docs/ARCHITECTURE.md) | [Features](docs/FEATURES.md) | [Roadmap](docs/ROADMAP.md)
+<p>
+	<a href="https://med-rag-sigma.vercel.app/"><img alt="Visit MedVector AI" src="https://img.shields.io/badge/Visit-med--rag--sigma.vercel.app-2F81F7?style=for-the-badge"></a>
+	<a href="docs/ARCHITECTURE.md"><img alt="Architecture" src="https://img.shields.io/badge/Architecture-System%20Design-3B82F6?style=for-the-badge"></a>
+	<a href="docs/FEATURES.md"><img alt="Status" src="https://img.shields.io/badge/Status-Live%20Pilot-22C55E?style=for-the-badge"></a>
+	<a href="LICENSE"><img alt="License" src="https://img.shields.io/badge/License-Proprietary-EA580C?style=for-the-badge"></a>
+</p>
 
 ## Live Product
 
@@ -35,23 +40,23 @@ Implementation source code is intentionally private.
 
 ### 1) Search Landing Experience
 
-![Search landing page](project_images/Search_intial_page%20(1).png)
+![Search landing page](project_images/search_initial_page.png)
 
 ### 2) Query Results With Cited Sources
 
-![Search results](project_images/Search_results.png)
+![Search results](project_images/search_results.png)
 
 ### 3) Source Card Selection and Evidence Snippet
 
-![Source and chunk citation panel](project_images/Source%20%2C%20chunk%20cited.png)
+![Source and chunk citation panel](project_images/source_chunk_cited.png)
 
 ### 4) Full Chunk Modal for Deep Evidence Review
 
-![Source chunk in detail modal](project_images/Source%20Chunk%20in%20Detail.png)
+![Source chunk in detail modal](project_images/source_chunk_detail.png)
 
 ### 5) Enterprise Document Upload and Indexing State
 
-![Enterprise document indexing flow](project_images/Enterprise_Document_Indexing.png)
+![Enterprise document indexing flow](project_images/enterprise_document_indexing.png)
 
 ## System Overview
 
